@@ -1,0 +1,82 @@
+.titleTxt{
+    background: rgb(200, 200, 200);
+    border-radius:20px 20px  0px 0px ;
+    height:40px;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    
+   
+    
+    
+}
+.titleTxt a{
+    display: flex;
+    height:100%
+    
+}
+.controls_waper{
+    padding:30px;
+    display: flex;
+    width:100vw;
+    justify-content: center;
+    align-items: center;
+}
+.controls{
+    background: rgb(233, 231, 231);
+    max-height:300px;
+    max-width:400px;
+    
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.total_price{
+    background: rgb(172, 172, 172);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.ingredientSelection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px
+
+}
+.ingredientSelection .btns .icons{
+    font-size: 1.4rem;
+    margin: 0 10px;
+    color:gray
+}
+.ingredientSelection .btns .icons:hover{
+    color:rgb(45, 45, 45)
+}
+.ingredientSelection .btns .add:active{
+    color:rgb(91, 250, 152)
+}
+.ingredientSelection .btns .remove:active{
+    color:rgb(255, 147, 147)
+}
+.submit{
+    width:100%;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+@media only screen and ( min-width: 540px ) {
+    .titleTxt p{
+        width:400px;
+        text-align: center;
+    }
+    .controls{
+        display: flex;
+    }
+}

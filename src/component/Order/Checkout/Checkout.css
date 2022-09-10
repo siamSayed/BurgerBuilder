@@ -1,0 +1,32 @@
+.checkout_form{
+    display: flex;
+    flex-direction: column;
+    max-width:400px;
+    justify-content: center;
+    align-items: center;
+
+}
+.checkout_form > *{
+    margin-top: 30px;
+    width:400px
+}
+#address{
+    max-height:100px
+}
+.payment_section{
+    display: flex;
+    flex-direction: column;
+}
+.checkout{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.totalPrice{
+    border: 1px solid gray;
+    width:400px;
+    padding:30px 0px;
+    text-align: center;
+}

@@ -6,27 +6,29 @@ import burgerLettus from "../../../assets/images/burgerLettus.svg"
 import burgerPatty from "../../../assets/images/burgerPatty.svg"
 
 class Ingredients extends Component {
-    
+
     render() {
-        let ingredients=null;
-        
-        switch(this.props.type){
-            case "BURGER_TOP":
-            ingredients=<img src={burgerTop} alt="burgerTop"/>
-            break
-            case "BURGER_SAUCE":
-            ingredients=<img src={burgerSauce} alt="burgerSauce"/>
-            break
-            case "BURGER_PATTY":
-            ingredients=<img src={burgerPatty} alt="burgerPatty"/>
-            break
-            case "BURGER_LETTUS":
-            ingredients=<img src={burgerLettus} alt="burgerLettus"/>
-            break
-            case "BURGER_BOTTOM":
-            ingredients=<img src={burgerBottom} alt='burgerBottom'/>
-            break
+        let ingredients=null
+        switch (this.props.type) {
+            case "burgerTop":
+                return ingredients= <img src={burgerTop} alt="burgerTop" />
+                break
+            case "burgerBottom":
+                return ingredients= <img src={burgerBottom} alt="burgerBottom" />
+                break
+            case "burgerLettus":
+                return ingredients= <img src={burgerLettus} alt="burgerLettus" />
+                break
+            case "burgerSauce":
+                return ingredients= <img src={burgerSauce} alt="burgerSauce" />
+                break
+            case "burgerPatty":
+                return ingredients= <img src={burgerPatty} alt="burgerPatty" />
+                break
+            
         }
+
+
         return (
             <div>
                 {ingredients}

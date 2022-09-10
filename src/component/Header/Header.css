@@ -1,0 +1,10 @@
+@media only screen and ( max-width: 768px ) {
+
+    .navigationBar{
+        z-index:1;
+        position: relative;
+        
+    }
+
+}
+

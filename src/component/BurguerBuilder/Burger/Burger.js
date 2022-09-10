@@ -1,30 +1,29 @@
 import React, { Component } from 'react';
 import Ingredients from '../Ingredients/Ingredients';
-import burgerTop from "../../../assets/images/burgerTop.svg"
 import "./Burger.css"
 class Burger extends Component {
     
     
     render() {
         let ingredientsArr=this.props.ingredients.map(item=>{
-            let ingredientsAmount=[...Array(item.amount).keys(Math.random)]
-            return ingredientsAmount.map(_=>{
+            let ingredientsIterate=[...Array(item.amount).keys(Math.random())]
+            return ingredientsIterate.map(_ =>{
                 return <Ingredients type={item.type} key={Math.random()}/>
             })
-        }).reduce((arr,items)=>{
-            return arr.concat(items)
-
-        },[])
+        }).reduce((arr,item)=>{
+            return arr.concat(item)
+        })
         if(ingredientsArr.length===0){
-            ingredientsArr= <p className='IngredientNull'>Ingridients gose here</p>
+            ingredientsArr=<p className='IngredientNull'>your ingredients gose here</p>
+            
         }
         
         
         return (
-            <div>
-                <Ingredients type="BURGER_TOP"/>
+            <div className='burger'>
+                <Ingredients type="burgerTop"/>
                 {ingredientsArr}
-                <Ingredients type="BURGER_BOTTOM"/>
+                <Ingredients type="burgerBottom"/>
 
             </div>
         );
